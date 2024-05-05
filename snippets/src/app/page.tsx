@@ -5,11 +5,11 @@ export default async function Home() {
   const renderSnippets = snippets.map((snippet) => {
     return (
       <Link
-        href={`/snippets/${snippet.title}`}
+        href={`/snippets/${snippet.id}`}
         key={snippet.id}
         className="flex justify-between items-center p-2 border rounded"
       >
-        {snippet.title}
+        <div>{snippet.title}</div>
         <div>View</div>
       </Link>
     );
